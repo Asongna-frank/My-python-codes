@@ -19,10 +19,12 @@ total_cost = area_square * cost_per_square_feet
 print('Total cost =', total_cost)
 
 # TASK 4
-num = 17
+num = 59
+original = num
 rem = 0
+i = 0
 while num > 0:
-    num = num / 2
-    rem = rem + (num % 2)
-str(rem)
-print('The binary of', num, "is", rem[::-1])
+    rem = rem + (num % 2) * (10 ** i)
+    num = num // 2
+    i = i + 1
+print('The binary of', original, "is", rem)
