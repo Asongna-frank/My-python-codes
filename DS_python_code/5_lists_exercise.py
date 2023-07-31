@@ -28,6 +28,7 @@ print(monthly_expenses)
 monthly_expenses[3] = monthly_expenses[3] - 200
 print(monthly_expenses)
 
+
 # TASK 2
 # You have a list of your favourite marvel super heroes.
 heroes = ['spider man', 'thor', 'hulk', 'iron man', 'captain america']
@@ -48,7 +49,7 @@ print(f'\n{heroes}')
 # Q4. Now you don't like thor and hulk because they get angry easily :)
 #   So you want to remove thor and hulk from list and replace them with doctor strange (because he is cool).
 #   Do that with one line of code.
-heroes[1:3]=['doctor strange']
+heroes[1:3] = ['doctor strange']
 print(f'\n{heroes}')
 
 # Q5. Sort the heroes list in alphabetical order
